@@ -15,7 +15,6 @@ export const App = () => {
 
   useEffect(() => {
     localStorage.setItem(LS_KEY, JSON.stringify(contacts));
-    console.log('renew localstorage');
   }, [contacts]);
 
   const onAddContact = newContact => {
